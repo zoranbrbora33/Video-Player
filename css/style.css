@@ -1,0 +1,458 @@
+/*========================
+GENERAL
+========================*/
+
+
+*,
+ *:before, 
+ *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body{
+  max-width: 969px;
+  margin: 0 auto;
+  font-family: 'Lora', serif;
+}
+
+.wrapp {
+  width: 100%;
+  max-width: 969px;
+  margin: 0 auto;
+}
+
+/*========================
+HEADER
+========================*/
+
+.main-header {
+  width: 100%;
+  text-align: center;
+  background-color: #1E2D34;
+  font-style: italic;
+}
+
+.logo {
+  font-size: 30px;
+  display: inline-block;
+  padding: 30px; 
+  color: #fff;
+}
+
+.logo:hover,
+.main-footer:hover {
+  color: #C52408;
+}
+
+
+/*========================
+VIDEO CONTAINER
+========================*/
+
+.vidContainer{
+  margin: 0 auto;
+  position: relative;
+  width:100%;
+  left: 0;
+  top: 0;
+}
+
+#myVideo{
+  width: 100%;
+}
+
+
+#myVideo:-webkit-full-screen {
+  width: 100%;
+  height: 100%;
+}
+
+#myVideo:-moz-full-screen {
+  width: 100%;
+  height: 100%;
+}
+
+#myVideo:-ms-full-screen {
+  width: 100%;
+  height: 100%;
+}
+
+#myVideo:-o-full-screen {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+/*========================
+BARS
+========================*/
+
+.progressBar {
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background: #000;
+    bottom: 5px;
+    cursor: pointer;
+}
+
+.timeBar {
+    position: absolute;
+    z-index: 200;
+    width: 0;
+    height: 5px;
+    background-color: #C52408;
+    cursor: pointer;
+}
+
+.bufferBar {
+    position: absolute;
+    z-index: 200;
+    width: 0;
+    height: 5px;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+
+/*========================
+VIDEO CONTROLS
+========================*/
+
+
+.video-controls {
+  position: absolute;
+  background: none;
+  width: 100%;
+  margin: 0 auto;
+  bottom: 0;
+  left:0;
+}
+
+
+
+/*========================
+BUTTONS
+========================*/
+
+
+button {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+#playpausebuttons{
+  position: absolute;
+  bottom: 7px;
+  left: 1px;
+  cursor: pointer;
+}
+
+#pause {
+  display: none;
+}
+
+#play {
+  width: 10px;
+  height: 10px;
+}
+
+#pause{
+  width: 10px;
+  height: 10px;
+}
+
+
+#duration {
+  position: absolute;
+  left: 20px;
+  bottom: 12px;
+  color: #fff;
+  font-size: 8px;
+  cursor: pointer;
+}
+
+.speed-container {
+  position: absolute;
+  bottom: 6px;
+  left: 78px;
+  font-size: 8px;
+  color: #fff;
+}
+
+
+.speed,
+#speedx1,
+#speedx3,
+#slowMo {
+  display: inline-block;
+  padding: 0.1px;
+  cursor: pointer;
+}
+
+
+#mute {
+  position: absolute;
+  right: 60px;
+  bottom: 7.7px;
+  cursor: pointer;
+}
+
+#volume {
+  display: none;
+}
+
+#muted {
+  width: 10px;
+  height: 10px;
+}
+
+#volume {
+  width: 10px;
+  height: 10px;
+}
+
+
+#volume-slider {
+    position: absolute;
+    width: 40px;
+    right: 20px;
+    bottom: 12px;
+    display: inline-block;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+input[type='range'] {
+    -webkit-appearance: none !important;
+    background: #000;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background: #FFF;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    cursor:pointer;
+}
+
+#fullScreen {
+  float: right;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-left: 1px;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+
+}
+
+.fullScreen {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  bottom: 10px;
+  right: 4px;
+}
+
+
+
+
+/*========================
+TEXT CONTAINER
+========================*/
+
+
+#transcript {
+  max-width: 969px; 
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  cursor: pointer;
+  margin-top: -3px;
+  font-family: 'Lora', serif;
+  color: #1E2D34;
+  background-color: #E2D0A0;
+  font-weight: 700;
+}
+
+.highlight {
+  color: #C52408;
+  font-size: 20px;
+}
+
+p {
+  line-height: 20px;
+  padding: 20px;
+}
+
+
+
+
+/*========================
+FOOTER
+========================*/
+
+.main-footer {
+  text-align: center;
+  font-size: 18px;
+  background-color: #1E2D34;
+  color: #fff;
+  font-style: italic;
+}
+
+
+/*========================
+RESPONSIVE LAYOUT
+========================*/
+
+@media only screen and (min-width: 320px) {
+
+
+  #playpausebuttons{
+    bottom: 5px;
+    left: 2px;
+  }
+
+
+  #play {
+    width: 15px;
+    height: 15px;
+  }
+
+  #pause{
+    width: 15px;
+    height: 15px;
+  }
+
+
+  #duration {
+    left: 30px;
+    bottom: 10px;
+    font-size: 12px;
+  }
+
+  .speed-container {
+    bottom: 5px;
+    left: 120px;
+    font-size: 12px;
+  }
+
+  #mute {
+    right: 75px;
+    bottom: 5px;
+  }
+
+  #muted {
+    width: 15px;
+    height: 15px;
+  }
+
+  #volume {
+    width: 15px;
+    height: 15px;
+  }
+
+
+  #volume-slider {
+      width: 50px;
+      right: 25px;
+      bottom: 10px;
+      border-radius: 3px;
+  }
+
+  input[type='range']::-webkit-slider-thumb {
+    width: 8px;
+    height: 8px; 
+  }
+
+
+  #fullScreen {
+    width: 20px;
+    height: 20px;
+  }
+
+  .fullScreen {
+    width: 15px;
+    height: 15px;
+  }
+  
+}
+
+
+@media only screen and (min-width: 600px) {
+  .progressBar {
+    height: 11px;
+    bottom: 15px;
+  }
+
+  .timeBar {
+    height: 11px;
+    
+  }
+
+  .bufferBar {
+    height: 11px;
+  }
+
+  #play,
+  #pause,
+  #fullScreen {
+    width: 22px;
+    height: 27px;
+  }
+  
+
+  #duration {
+    left: 50px;
+    bottom: 12px;
+    font-size: 20px;
+  }
+
+  .speed-container {
+    left: 200px;
+    bottom: 11px;
+    font-size: 20px;
+  }
+
+  #mute {
+    right: 115px;
+    bottom: 4px;
+  }
+
+  #muted {
+   width: 22px;
+   height: 27px;
+  }
+
+  #volume {
+    width: 22px;
+    height: 27px;
+  }
+
+  #volume-slider {
+    width: 80px;
+    bottom: 9px;
+    right: 35px;
+    border-radius: 8px;
+  }
+
+  input[type='range']::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px; 
+  }
+
+  .fullScreen {
+    width: 22px;
+    height: 27px;
+  }
+}
+
+
